@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobbymash Logistics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Modal styles */
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgba(0,0,0,0.4); 
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; 
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; 
+            max-width: 600px; 
+            border-radius: 5px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Admin styles */
+        .admin-section {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tobbymash Logistics</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <p id="service-description">We provide a range of logistics services including transportation, warehousing, and distribution.</p>
+        
+        <h3>1. Freight Transportation</h3>
+        <ul>
+            <li>Road Freight</li>
+            <li>Air Freight</li>
+            <li>Ocean Freight</li>
+        </ul>
+
+        <h3>2. Warehousing and Distribution</h3>
+        <ul>
+            <li>Storage Solutions</li>
+            <li>Inventory Management</li>
+            <li>Order Fulfillment</li>
+            <li>Cross-Docking Services</li>
+        </ul>
+
+        <h3>3. Last-Mile Delivery</h3>
+        <ul>
+            <li>Residential Deliveries</li>
+            <li>Commercial Deliveries</li>
+            <li>Same-Day Delivery Services</li>
+        </ul>
+
+        <h3>4. Supply Chain Management</h3>
+        <ul>
+            <li>Supply Chain Consulting</li>
+            <li>Demand Planning</li>
+            <li>Logistics Network Design</li>
+        </ul>
+
+        <h3>5. Customs Brokerage</h3>
+        <ul>
+            <li>Import and Export Clearance</li>
+            <li>Tariff Classification</li>
+            <li>Compliance Consulting</li>
+        </ul>
+
+        <h3>6. Freight Forwarding</h3>
+        <ul>
+            <li>Consolidation Services</li>
+            <li>Documentation and Compliance Management</li>
+        </ul>
+
+        <h3>7. Transportation Management</h3>
+        <ul>
+            <li>Route Optimization</li>
+            <li>Fleet Management</li>
+            <li>Carrier Selection and Management</li>
+        </ul>
+
+        <h3>8. Project Cargo Services</h3>
+        <ul>
+            <li>Heavy Lift Transport</li>
+            <li>Oversized Cargo Handling</li>
+            <li>Specialized Equipment Transport</li>
+        </ul>
+
+        <h3>9. E-commerce Logistics</h3>
+        <ul>
+            <li>Integrated E-commerce Fulfillment</li>
+            <li>Returns Management</li>
+        </ul>
+
+        <h3>10. Cold Chain Logistics</h3>
+        <ul>
+            <li>Temperature-Controlled Storage and Transport</li>
+            <li>Perishable Goods Handling</li>
+        </ul>
+
+        <h3>11. Packaging Services</h3>
+        <ul>
+            <li>Custom Packaging Solutions</li>
+            <li>Protective Packaging for Fragile Goods</li>
+        </ul>
+
+        <h3>12. Logistics Consulting</h3>
+        <ul>
+            <li>Process Optimization</li>
+            <li>Cost Reduction Strategies</li>
+            <li>Risk Management Solutions</li>
+        </ul>
+
+        <h3>13. Technology Solutions</h3>
+        <ul>
+            <li>Tracking and Visibility Systems</li>
+            <li>Inventory Management Software</li>
+            <li>EDI (Electronic Data Interchange) Services</li>
+        </ul>
+
+        <h3>14. Insurance Services</h3>
+        <ul>
+            <li>Cargo Insurance</li>
+            <li>Liability Insurance</li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p id="about-description">Tobbymash Logistics Company is a dynamic and reliable logistics provider dedicated to delivering exceptional transportation and supply chain solutions. Founded with a commitment to efficiency, precision, and customer satisfaction, Tobbymash offers a comprehensive range of services that cater to the diverse needs of businesses and individuals alike.</p>
+        
+        <p>From freight management and warehousing to last-mile delivery and customized logistics solutions, Tobbymash combines advanced technology with a skilled team to ensure seamless operations. We understand the importance of timely, secure, and cost-effective services in today's fast-paced market, making us a trusted partner in moving goods across local, regional, and international borders.</p>
+        
+        <p>At Tobbymash Logistics Company, we strive to build long-term relationships with our clients by providing tailored solutions that meet unique business demands. With an emphasis on transparency, reliability, and innovation, Tobbymash Logistics is committed to helping businesses thrive through efficient logistics support and supply chain management.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Reach out to us for inquiries or further information about our services.</p>
+        <p>Phone Numbers:</p>
+        <ul>
+            <li>+254708588198</li>
+            <li>+254746406665</li>
+        </ul>
+        <p>WhatsApp us:</p>
+        <a href="https://wa.me/254746406665" target="_blank">
+            <i class="fab fa-whatsapp" style="font-size: 24px; color: green;"></i>
+        </a>
+        <p>Email us:</p>
+        <a href="mailto:tobbymashke@gmail.com" target="_blank">
+            <i class="fas fa-envelope" style="font-size: 24px; color: red;"></i>
+        </a>
+        <p>Call us:</p>
+        <a href="tel:+254746406665">
+            <i class="fas fa-phone" style="font-size: 24px; color: blue;"></i>
+        </a>
+        <p>Book an Appointment:</p>
+        <button id="bookAppointmentBtn">
+            <i class="fas fa-calendar-alt" style="font-size: 24px; color: blue;"></i> Book an Appointment
+        </button>
+        <p>Staff Login:</p>
+        <button id="loginBtn">
+            <i class="fas fa-user-lock" style="font-size: 24px; color: blue;"></i> Staff Login
+        </button>
+    </section>
+
+    <!-- Appointment Modal -->
+    <div id="appointmentModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeAppointmentModal">&times;</span>
+            <h2>Book an Appointment</h2>
+            <form id="appointmentForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required><br><br>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" required><br><br>
+                
+                <label for="datetime">Select Date and Time:</label>
+                <input type="datetime-local" id="datetime" required><br><br>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLoginModal">&times;</span>
+            <h2>Staff Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required><br><br>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" required><br><br>
+                
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="#" id="createAccountLink">Create an account</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Admin Modal -->
+    <div id="adminModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeAdminModal">&times;</span>
+            <h2>Admin Panel</h2>
+            <div class="admin-section">
+                <h3>Edit About Us</h3>
+                <textarea id="aboutEdit" rows="4" style="width: 100%;"></textarea><br>
+                <button id="saveAboutBtn">Save Changes</button>
+            </div>
+            <div class="admin-section">
+                <h3>Edit Services Offered</h3>
+                <textarea id="serviceEdit" rows="4" style="width: 100%;"></textarea><br>
+                <button id="saveServiceBtn">Save Changes</button>
+            </div>
+            <div class="admin-section">
+                <h3>Post Event</h3>
+                <textarea id="eventPost" rows="4" style="width: 100%;"></textarea><br>
+                <button id="postEventBtn">Post Event</button>
+            </div>
+            <div id="eventsList"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Tobbymash Logistics. All rights reserved.</p>
+        <ul>
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+            <li><a href="https://www.twitter.com">Twitter</a></li>
+            <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        // Default login credentials
+        const defaultUsername = "tobbymash";
+        const defaultPassword = "37812883Tm.";
+
+        // Get modal elements
+        var appointmentModal = document.getElementById("appointmentModal");
+        var loginModal = document.getElementById("loginModal");
+        var adminModal = document.getElementById("adminModal");
+        var bookAppointmentBtn = document.getElementById("bookAppointmentBtn");
+        var loginBtn = document.getElementById("loginBtn");
+        var closeAppointmentModal = document.getElementById("closeAppointmentModal");
+        var closeLoginModal = document.getElementById("closeLoginModal");
+        var closeAdminModal = document.getElementById("closeAdminModal");
+
+        // Open appointment modal
+        bookAppointmentBtn.onclick = function() {
+            appointmentModal.style.display = "block";
+        }
+
+        // Open login modal
+        loginBtn.onclick = function() {
+            loginModal.style.display = "block";
+        }
+
+        // Close appointment modal
+        closeAppointmentModal.onclick = function() {
+            appointmentModal.style.display = "none";
+        }
+
+        // Close login modal
+        closeLoginModal.onclick = function() {
+            loginModal.style.display = "none";
+        }
+
+        // Close admin modal
+        closeAdminModal.onclick = function() {
+            adminModal.style.display = "none";
+        }
+
+        // Close modal on outside click
+        window.onclick = function(event) {
+            if (event.target == appointmentModal) {
+                appointmentModal.style.display = "none";
+            }
+            if (event.target == loginModal) {
+                loginModal.style.display = "none";
+            }
+            if (event.target == adminModal) {
+                adminModal.style.display = "none";
+            }
+        }
+
+        // Handle appointment form submission
+        document.getElementById('appointmentForm').onsubmit = function(event) {
+            event.preventDefault(); // Prevent default form submission
+            alert('Appointment booked!'); // Alert for demonstration
+            appointmentModal.style.display = "none"; // Close the modal after submission
+        }
+
+        // Handle login form submission
+        document.getElementById('loginForm').onsubmit = function(event) {
+            event.preventDefault(); // Prevent default form submission
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Check credentials
+            if (username === defaultUsername && password === defaultPassword) {
+                alert('Login successful!'); // Alert for demonstration
+                loginModal.style.display = "none"; // Close the modal after successful login
+                adminModal.style.display = "block"; // Open the admin modal
+                document.getElementById('aboutEdit').value = document.getElementById('about-description').innerText;
+                document.getElementById('serviceEdit').value = document.getElementById('service-description').innerText;
+            } else {
+                alert('Invalid username or password.'); // Alert for incorrect credentials
+            }
+        }
+
+        // Save changes for About Us
+        document.getElementById('saveAboutBtn').onclick = function() {
+            const newAboutText = document.getElementById('aboutEdit').value;
+            document.getElementById('about-description').innerText = newAboutText;
+            alert('About Us updated successfully!');
+        }
+
+        // Save changes for Services Offered
+        document.getElementById('saveServiceBtn').onclick = function() {
+            const newServiceText = document.getElementById('serviceEdit').value;
+            document.getElementById('service-description').innerText = newServiceText;
+            alert('Services updated successfully!');
+        }
+
+        // Post an event
+        document.getElementById('postEventBtn').onclick = function() {
+            const eventText = document.getElementById('eventPost').value;
+            const eventsList = document.getElementById('eventsList');
+            const eventItem = document.createElement('div');
+            eventItem.innerText = eventText;
+            eventsList.appendChild(eventItem);
+            document.getElementById('eventPost').value = ''; // Clear textarea
+            alert('Event posted successfully!');
+        }
+    </script>
+</body>
+</html>
+```
